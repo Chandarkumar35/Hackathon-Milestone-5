@@ -1,0 +1,137 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20%;
+    margin-bottom: 1px;
+    background-color: #f9f9f9;
+    
+    
+}
+.resumediv{
+    width: 70%;
+    padding: 2%; 
+    padding-top: 2%;
+    border: 2px solid black;
+    margin-top: 60px;
+   
+   
+
+    .name-white{
+        color: white;
+    }
+
+}
+header{
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(rgba(95, 195, 206, 0.8), rgba(73, 189, 224, 0.6));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header img{
+    width: 25%;
+    height: 180px;
+    border-radius: 100%;
+    /* border: 2px saddlebrown; */
+}
+.content{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+}
+.content aside {
+    width: 30%;
+    /* background-color: aqua; */
+    /* display: flex; */
+    padding-left: 5%;
+background-color: #f9f9f9;
+}
+.content h2{
+    border-bottom: 3px solid rgb(142, 232, 242);
+    margin-bottom: 20px;
+    color: #00bff0;
+}
+.skills ul{
+    margin-left: 15px;
+}
+.language ul{
+    margin-left: 15px;
+}
+.main-content{
+width: 70%;
+padding-left: 50px;
+background-color: white;
+}
+
+.experience-items{
+    margin-bottom: 99px;
+}
+.experience-items p{
+    margin-bottom: 5px;
+}
+.experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.hide{
+    display: none;
+}
+@media (max-width: 786px) {
+    .content {
+        flex-direction: column
+    }
+    aside{
+        width: 100%;
+        padding: 10%;
+    }
+   
+}
+.btnDiv{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #00bff0; */
+    margin-top: 5px;
+   
+}
+#btn,#btn1,#btn2,#btn3,#btn4, #btn5, #btn6, #btn7, #btn8, #btn9,#anc{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px 14px;
+    border-radius: 8px;
+    color: white ;
+    width: 15%;
+justify-content: space-evenly;
+background-color: #00bfff;
+cursor: pointer;
+&:hover{
+    background: #00b9e0;
+}
+&:active{
+    transform: scale(0.95);
+}
+
+
+}
+.btnDiv button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+    border: 2px solid #4CAF50; /* Green border on hover */
+}
